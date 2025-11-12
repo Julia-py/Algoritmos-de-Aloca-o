@@ -1,6 +1,7 @@
-package main.java.org.example.interfaces;
+package interfaces;
 
-import main.java.org.example.model.Particao;
+
+import model.Particao;
 
 import java.util.List;
 

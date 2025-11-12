@@ -1,4 +1,4 @@
-package main.java.org.example.model;
+package model;
 
 public class Particao {
     private int inicio;
