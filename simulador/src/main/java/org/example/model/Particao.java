@@ -29,6 +29,12 @@ public class Particao {
         return processo;
     }
 
+    public void setLivre(boolean livre) {this.livre = livre;}
+
+    public void setProcesso(String processo) {this.processo = processo;}
+
+    public void setTamanho(int tamanho) {this.tamanho = tamanho;}
+
     public void ocupar(String processo, int tamanho) {
         this.livre = false;
         this.processo = processo;
