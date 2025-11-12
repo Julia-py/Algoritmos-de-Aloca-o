@@ -1,20 +1,48 @@
-
+package algoritmos;
 
 import algoritmos.FirstFit;
 import interfaces.AlgoritmoAlocacao;
+import model.Particao;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FirstFitTest {
+   private List<Particao> memoria;
+   private FirstFit algoritmo;
 
-    public static void main(String [] args) {
-        AlgoritmoAlocacao algoritmo = new FirstFit();
-        SimuladorMemoria simulador = new SimuladorMemoria(1000,algoritmo);
+      @BeforeEach
+      void setup() {
+          List<Particao> memoria = new ArrayList<>();
+          memoria.add(new Particao(0, 200));
+          memoria.add(new Particao(200, 300));
+          memoria.add(new Particao(500, 500));
+          algoritmo = new FirstFit();
 
-        simulador.alocar("P1", 200);
-        simulador.alocar("P2", 300);
-        simulador.alocar("P3", 100);
-        simulador.mostrarEstado();
-    }
+          algoritmo.alocar(memoria, "P1", 150);
+          algoritmo.alocar(memoria, "P2", 200);
+          algoritmo.alocar(memoria, "P3", 100);
+      }
 
+
+     /* @Test
+      void deveAlocarNaPrimeiraParticaoLivreSuficiente() {
+          boolean sucesso1 = algoritmo.alocar(memoria, "P1", 150);
+          Assertions.assertTrue(sucesso1);
+          Assertions.assertEquals("P1", memoria.get(1).getProcesso());
+
+          boolean sucesso2 = algoritmo.alocar(memoria, "P2", 50);
+          Assertions.assertTrue(sucesso2);
+          Assertions.assertEquals("P2", memoria.get(0).getProcesso());
+          }*/
+          @Test
+          void deveFalharQuandoNaoHaEspacoSuficiente() {
+              boolean sucesso = algoritmo.alocar(memoria, "P1", 1000);
+              Assertions.assertFalse(sucesso);
+          }
 
 
 }
