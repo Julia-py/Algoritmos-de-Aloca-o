@@ -29,6 +29,7 @@ public class Particao {
         return processo;
     }
 
+
     public void ocupar(String processo, int tamanho) {
         this.livre = false;
         this.processo = processo;
@@ -39,4 +40,7 @@ public class Particao {
         this.livre = true;
         this.processo = null;
     }
+
+
+
 }
