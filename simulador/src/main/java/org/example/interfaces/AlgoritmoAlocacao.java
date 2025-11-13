@@ -1,8 +1,7 @@
-package org.example.interfaces;
+package interfaces;
 
 
-
-import org.example.model.Particao;
+import model.Particao;
 
 import java.util.List;
 

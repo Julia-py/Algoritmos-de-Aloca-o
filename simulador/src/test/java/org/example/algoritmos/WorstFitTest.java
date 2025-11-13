@@ -1,6 +1,6 @@
-package org.example.algoritmos;
+package algoritmos;
 
-import org.example.model.Particao;
+import model.Particao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 
 public class WorstFitTest {
     private WorstFit algoritmo;

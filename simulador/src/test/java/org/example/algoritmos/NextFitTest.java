@@ -1,7 +1,6 @@
-package org.example.algoritmos;
+package algoritmos;
 
-import org.example.algoritmos.NextFitTest;
-import org.example.model.Particao;
+import model.Particao;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

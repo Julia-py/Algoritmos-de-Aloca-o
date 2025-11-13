@@ -1,8 +1,6 @@
-package org.example;
-
-import org.example.algoritmos.WorstFit;
-import org.example.algoritmos.NextFit;
-import org.example.interfaces.AlgoritmoAlocacao;
+import algoritmos.NextFit;
+import algoritmos.WorstFit;
+import interfaces.AlgoritmoAlocacao;
 
 public class Main {
     public static void main(String[] args) {
