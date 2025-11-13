@@ -1,6 +1,7 @@
+package org.example;
 
-import interfaces.AlgoritmoAlocacao;
-import model.Particao;
+import org.example.interfaces.AlgoritmoAlocacao;
+import org.example.model.Particao;
 
 import java.util.ArrayList;
 import java.util.List;
