@@ -1,5 +1,6 @@
 package algoritmos;
 
+
 import interfaces.AlgoritmoAlocacao;
 import model.Particao;
 

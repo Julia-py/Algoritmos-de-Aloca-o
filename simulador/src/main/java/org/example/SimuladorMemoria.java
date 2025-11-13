@@ -1,4 +1,6 @@
 
+
+
 import interfaces.AlgoritmoAlocacao;
 import model.Particao;
 
